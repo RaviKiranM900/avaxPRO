@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package com.portal.serviceimpl;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+
+import com.portal.dao.IPPortalEmployeeRepository;
+import com.portal.entities.Employee;
+import com.portal.service.IPPortalEmployeeService;
+
+/**
+ * @author DELL
+ *
+ */
+@Component
+public class IPPortalEmployeeServiceImpl implements IPPortalEmployeeService{
+	
+	@Autowired
+	private IPPortalEmployeeRepository ipPortalEmpRepo;
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public ArrayList<Employee> getAllEmployeeList() {
+		// TODO Auto-generated method stub
+		return (ArrayList<Employee>) ipPortalEmpRepo.findAll();
+	}
+
+}

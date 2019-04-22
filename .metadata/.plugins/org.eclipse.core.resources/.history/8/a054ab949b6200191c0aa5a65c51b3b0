@@ -1,0 +1,24 @@
+#Oracle connection
+#oracle.username=schneider_prod
+#oracle.password=schneider_prod
+#oracle.url=jdbc:oracle:thin:@192.168.0.176:1521/stage
+#spring.datasource.driver.class=oracle.jdbc.driver.OracleDriver
+spring.datasource.url= jdbc:postgresql:@localhost:5433/public 
+spring.datasource.username=postgres 
+spring.datasource.password=postgres@123   
+spring.datasource.driver-class-name=org.postgresql.Driver
+# Allows Hibernate to generate SQL optimized for a particular DBMS
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+#to recreate the database on every server start up
+#spring.jpa.hibernate.ddl-auto=create-drop
+
+# logging
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+logging.level.org.hibernate.SQL=debug
+
+#html files information
+spring.mvc.view.prefix: /resources/templates/
+spring.mvc.view.suffix: .html
+
+#server information
+server.port=8090

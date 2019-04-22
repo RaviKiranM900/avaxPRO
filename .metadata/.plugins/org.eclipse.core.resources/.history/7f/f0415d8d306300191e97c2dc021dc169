@@ -1,0 +1,48 @@
+package com.avaxpro.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EMPLOYEE")
+public class DebtAndCreditEntity {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+    @Column(name="EMP_NAME")
+    private String emp_Name;
+  
+    
+
+    
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+	/**
+	 * @return the emp_Name
+	 */
+	public String getEmp_Name() {
+		return emp_Name;
+	}
+
+	/**
+	 * @param emp_Name the emp_Name to set
+	 */
+	public void setEmp_Name(String emp_Name) {
+		this.emp_Name = emp_Name;
+	}
+
+   
+
+   
+}

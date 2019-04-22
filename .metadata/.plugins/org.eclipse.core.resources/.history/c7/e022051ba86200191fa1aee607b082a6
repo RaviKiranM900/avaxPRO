@@ -1,0 +1,127 @@
+package com.avaxpro.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EMPLOYEE")
+public class DebtAndCreditEntity {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+    @Column(name="EMP_NAME")
+    private String emp_Name;
+    @Column(name="FIRSTNAME")
+    private String firstName;
+    @Column(name="LASTNAME")
+    private String lastName;
+    @Column(name="MIDDLENAME")
+    private String middleName;
+    @Column(name="CONTACTNUMBER")
+    private String contactNumber;
+    @Column(name="EMPID")
+    private String empId;
+    
+
+    
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+	/**
+	 * @return the firstName
+	 */
+	public String getFirstName() {
+		return firstName;
+	}
+
+	/**
+	 * @param firstName the firstName to set
+	 */
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	/**
+	 * @return the lastName
+	 */
+	public String getLastName() {
+		return lastName;
+	}
+
+	/**
+	 * @param lastName the lastName to set
+	 */
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	/**
+	 * @return the middleName
+	 */
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	/**
+	 * @param middleName the middleName to set
+	 */
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	/**
+	 * @return the contactNumber
+	 */
+	public String getContactNumber() {
+		return contactNumber;
+	}
+
+	/**
+	 * @param contactNumber the contactNumber to set
+	 */
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	/**
+	 * @return the empId
+	 */
+	public String getEmpId() {
+		return empId;
+	}
+
+	/**
+	 * @param empId the empId to set
+	 */
+	public void setEmpId(String empId) {
+		this.empId = empId;
+	}
+
+	/**
+	 * @return the emp_Name
+	 */
+	public String getEmp_Name() {
+		return emp_Name;
+	}
+
+	/**
+	 * @param emp_Name the emp_Name to set
+	 */
+	public void setEmp_Name(String emp_Name) {
+		this.emp_Name = emp_Name;
+	}
+
+   
+
+   
+}

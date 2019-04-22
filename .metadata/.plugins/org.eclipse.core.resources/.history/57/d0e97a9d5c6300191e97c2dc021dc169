@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.avaxpro.dto;
+
+/**
+ * @author DELL
+ *
+ */
+public class DebtAndCredDto {
+
+}

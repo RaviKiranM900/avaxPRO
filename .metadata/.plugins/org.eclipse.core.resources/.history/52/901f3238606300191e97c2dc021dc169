@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package com.avaxpro.serviceimpl;
+
+import java.util.ArrayList;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+
+import com.avaxpro.dao.DebtAndCreditRepository;
+import com.avaxpro.dto.DebtAndCredDto;
+import com.avaxpro.entities.DebtAndCreditEntity;
+import com.avaxpro.service.DebtAndCreditService;
+
+/**
+ * @author DELL
+ *
+ */
+@Component
+public class DebtAndCreditServiceImpl implements DebtAndCreditService{
+	
+	@Autowired
+	private DebtAndCreditRepository debtAndCreditRepo;
+
+	
+	@Override
+	public ArrayList<DebtAndCreditEntity> getAllDebtCreditReportList() {
+		// TODO Auto-generated method stub
+		return (ArrayList<DebtAndCreditEntity>) debtAndCreditRepo.findAll();
+	}
+
+
+	@Override
+	public String saveDebtAndCred(DebtAndCredDto debtCredDto) {
+		// TODO Auto-generated method stub
+		
+		return debtAndCreditRepo.save(entity);
+	}
+
+}

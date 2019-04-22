@@ -1,0 +1,29 @@
+<div class="card my-5">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #debtcredForm="ngForm">
+        <mat-form-field>
+          <input matInput  [(ngModel)]="debtCred.handledBy" 
+            class="form-control" id="handledBy" name="handledBy" placeholder="Enter your handled By"
+            required #handledBy="ngModel">
+          </mat-form-field>
+        <div ></div>
+        <mat-form-field>
+         
+          <input matInput  [(ngModel)]="debtCred.branch" 
+            class="form-control" id="branch" name="branch" placeholder="Enter your branch"
+            required #branch="ngModel">
+        </mat-form-field>
+          <div></div>
+          <mat-form-field>
+          
+            <input matInput  [(ngModel)]="debtCred.agingReportType" 
+              class="form-control" id="agingReportType" name="agingReportType" placeholder="Enter your Reporting Type">
+            </mat-form-field>
+            <div></div>
+         <!--<mat-icon>home</mat-icon>-->
+
+         <button mat-raised-button [disabled]="!debtcredForm.form.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+  

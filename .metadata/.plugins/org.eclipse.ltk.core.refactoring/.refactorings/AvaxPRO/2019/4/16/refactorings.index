@@ -1,0 +1,15 @@
+1555671659308	Rename package 'com.portal'
+1555671718615	Rename package 'com.portal.configuration'
+1555671733673	Rename package 'com.portal.controllers'
+1555671743654	Rename package 'com.portal.dao'
+1555671751249	Rename package 'com.portal.entities'
+1555671758912	Rename package 'com.portal.service'
+1555671766000	Rename package 'com.portal.serviceimpl'
+1555671859235	Rename type 'IPPortalEmployeeRepository'
+1555671872076	Rename type 'Employee'
+1555671880498	Rename type 'IPPortalEmployeeService'
+1555671888518	Rename type 'IPPortalEmployeeServiceImpl'
+1555672472469	Rename package 'com.portal.ipportal'
+1555682392755	Delete element
+1555683455351	Delete element
+1555683533112	Delete element

@@ -1,0 +1,25 @@
+#Oracle connection
+#oracle.username=schneider_prod
+#oracle.password=schneider_prod
+#oracle.url=jdbc:oracle:thin:@192.168.0.176:1521/stage
+#spring.datasource.driver.class=oracle.jdbc.driver.OracleDriver
+
+#to recreate the database on every server start up
+#spring.jpa.hibernate.ddl-auto=create-drop
+
+#postgres connection
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.hibernate.show-sql=true
+spring.datasource.url=jdbc:postgresql://localhost:5433/postgres
+spring.datasource.username=postgres
+spring.datasource.password=admin
+
+# logging
+logging.level.root=info
+logging.pattern.console=%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n
+logging.file=logs/spring-boot-logging.log
+
+
+#server information
+server.port=8090

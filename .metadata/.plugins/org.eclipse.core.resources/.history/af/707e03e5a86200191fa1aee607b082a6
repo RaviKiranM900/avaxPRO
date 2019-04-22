@@ -1,0 +1,29 @@
+package com.avaxpro.controllers;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.avaxpro.entities.DebtAndCreditEntity;
+import com.avaxpro.service.DebtAndCreditService;
+
+@RestController
+@RequestMapping("/api/ipportal")
+public class DebtAndCreditController {
+	
+	@Autowired
+	private DebtAndCreditService debtAndCreditService;
+    @GetMapping("/getallemployeelist")
+    //@RequestMapping(value="/", method = RequestMethod.GET)
+    public ArrayList<DebtAndCreditEntity> getAllEmployeeList() {
+    	
+    	return debtAndCreditService.getAllEmployeeList();
+       
+    }
+
+   
+}

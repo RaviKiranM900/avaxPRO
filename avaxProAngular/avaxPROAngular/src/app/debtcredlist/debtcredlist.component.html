@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Handle By</th>
+          <th scope="col">Branch</th>
+          <th scope="col">Aging Report Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let debtcredt of debtcred">
+          <td>{{ debtcredt.id }}</td>
+          <td>{{ debtcredt.handledBy }}</td>
+          <td>{{ debtcredt.branch }}</td>
+          <td>{{ debtcredt.agingReportType }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

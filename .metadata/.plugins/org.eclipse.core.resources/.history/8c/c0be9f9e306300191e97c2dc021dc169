@@ -1,0 +1,20 @@
+package com.avaxpro.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EMPLOYEE")
+public class DebtAndCreditEntity {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+    @Column(name="EMP_NAME")
+    private String emp_Name;
+  
+    
+}

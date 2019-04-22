@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.portal.service;
+
+import java.util.ArrayList;
+
+import org.springframework.http.ResponseEntity;
+
+import com.avaxpro.entities.Employee;
+
+/**
+ * @author DELL
+ *
+ */
+
+public interface IPPortalEmployeeService {
+
+	ArrayList<Employee> getAllEmployeeList();
+
+}

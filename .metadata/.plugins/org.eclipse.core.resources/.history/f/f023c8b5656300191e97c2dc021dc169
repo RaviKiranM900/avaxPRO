@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.avaxpro.dto;
+
+
+
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ * @author DELL
+ *
+ */
+
+public class DebtAndCredDto {
+	private String handledBy;
+    private String branch;
+    private String agingReportType;
+	
+}

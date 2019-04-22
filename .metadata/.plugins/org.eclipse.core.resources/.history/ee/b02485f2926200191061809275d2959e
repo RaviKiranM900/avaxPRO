@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package com.avaxpro.serviceimpl;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+
+import com.avaxpro.dao.DebtAndCreditRepository;
+import com.avaxpro.entities.DebtAndCreditEntity;
+import com.avaxpro.service.DebtAndCreditService;
+
+/**
+ * @author DELL
+ *
+ */
+@Component
+public class IPPortalEmployeeServiceImpl implements DebtAndCreditService{
+	
+	@Autowired
+	private DebtAndCreditRepository ipPortalEmpRepo;
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public ArrayList<DebtAndCreditEntity> getAllEmployeeList() {
+		// TODO Auto-generated method stub
+		return (ArrayList<DebtAndCreditEntity>) ipPortalEmpRepo.findAll();
+	}
+
+}

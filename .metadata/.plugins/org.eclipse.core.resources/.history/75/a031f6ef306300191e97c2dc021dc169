@@ -1,0 +1,33 @@
+package com.avaxpro.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name="EMPLOYEE")
+@Getter 
+@Setter
+@NoArgsConstructor
+public class DebtAndCreditEntity {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+    @Column(name="HANDLED_BY")
+    private String handledBy;
+    @Column(name="BRANCH")
+    private String branch;
+    @Column(name="AGING_REPORT_TYPE")
+    private String agingReportType;
+    @Column(name="AGING_REPORT_TIME_PERIOD")
+    private Date handledBy;
+  
+    
+}

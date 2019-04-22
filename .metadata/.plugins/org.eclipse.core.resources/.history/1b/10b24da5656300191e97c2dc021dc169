@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.avaxpro.dto;
+
+import javax.persistence.Column;
+
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ * @author DELL
+ *
+ */
+@Getter
+@Setter
+public class DebtAndCredDto {
+	private String handledBy;
+    @Column(name="BRANCH")
+    private String branch;
+    @Column(name="AGING_REPORT_TYPE")
+    private String agingReportType;
+	
+}
